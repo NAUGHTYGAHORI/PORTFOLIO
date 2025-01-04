@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-areas: 
+                "section aside"
+                "article aside";
+            grid-template-columns: 3fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        section {
+            grid-area: section;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        article {
+            grid-area: article;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        aside {
+           
+            background: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                grid-template-areas: 
+                    "section"
+                    "aside"
+                    "article";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Daily News Portal</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Politics</a>
+    <a href="#">Technology</a>
+    <a href="#">Sports</a>
+</nav>
+
+<div class="main">
+    <section>
+        <h2>Top Stories</h2>
+        <p>Breaking News: Major earthquake strikes the Pacific region causing widespread damage and disruption.</p>
+        <p>Economic Watch: Inflation rates soar to new highs amid global financial uncertainty.</p>
+        <p>Health Alert: Authorities announce new measures to combat rising cases of seasonal flu.</p>
+    </section>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">COVID-19 Updates</a></li>
+            <li><a href="#">Market Trends</a></li>
+            <li><a href="#">Weather Forecast</a></li>
+        </ul>
+
+    </aside>
+    <aside>
+        <h3>Quick Links68</h3>
+        <ul>
+            <li><a href="#">MY LIFE MY RULES,COM</a></li>
+            <li><a href="#">YOUR LIFE ALSO MY RULES</a></li>
+            <li><a href="#">YOU ARE ME, I AM YOU</a></li>
+        </ul>
+
+    </aside>
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">COVID-19 Updates</a></li>
+            <li><a href="#">Market Trends</a></li>
+            <li><a href="#">Weather Forecast</a></li>
+        </ul>
+
+    </aside>
+    <article>
+        <h2>Technology Update</h2>
+        <p>Advancements in AI: New breakthroughs in natural language processing redefine human-computer interaction.</p>
+        <p>Tech Giants Unite: Collaboration on green technology aims to reduce the industry’s carbon footprint.</p>
+        <p>Space Exploration: Private companies make strides in affordable satellite launches.</p>
+    </article>
+  
+    <article>
+        <h2>Technology Update</h2>
+        <p>Advancements in AI: New breakthroughs in natural language processing redefine human-computer interaction.</p>
+        <p>Tech Giants Unite: Collaboration on green technology aims to reduce the industry’s carbon footprint.</p>
+        <p>Space Exploration: Private companies make strides in affordable satellite launches.</p>
+    </article>
+    <article>
+        <h2>Technology Update</h2>
+        <p>Advancements in AI: New breakthroughs in natural language processing redefine human-computer interaction.</p>
+        <p>Tech Giants Unite: Collaboration on green technology aims to reduce the industry’s carbon footprint.</p>
+        <p>Space Exploration: Private companies make strides in affordable satellite launches.</p>
+    </article>
+    <article>
+        <h2>Technology Update</h2>
+        <p>Advancements in AI: New breakthroughs in natural language processing redefine human-computer interaction.</p>
+        <p>Tech Giants Unite: Collaboration on green technology aims to reduce the industry’s carbon footprint.</p>
+        <p>Space Exploration: Private companies make strides in affordable satellite launches.</p>
+    </article>
+</div>
+
+<footer>
+    <p>&copy; 2025 Daily News Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
